@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>info</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Employee Directory</h1>
+        <!-- Creating the info -->
+        <form action="/createEmployee" method="post">
+            <div class="form-group">
+                <label for="name">Employee Name</label>
+                <input class="form-control" type="text" id="name" placeholder="Employee Name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Employee ID</label>
+                <input class="form-control" type="text" id="email" placeholder="Employee ID" name="employeeId">
+            </div>
+            <button class="btn btn-info" type="submit">Submit</button>
+
+        </form>
+        <!-- Updating the info -->
+        <div>
+            <p>Updating the info</p>
+            <button class="btn btn-success" id="update-button">Update</button>
+        </div>
+
+        <!-- Deleting the info -->
+        <div>
+            <p class="my-3">Deleting the info</p>
+            <button class="btn btn-danger" id="delete-button">Delete</button>
+        </div>
+
+    </div>
+    <script src="/main.js">
+    </script>
+</body>
+
+
+</html>

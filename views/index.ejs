@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserData</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <table class="table table-striped table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Sl.NO</th>
+                    <th>Employee Name</th>
+                    <th>Employee ID</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <% employees.forEach((item) => { %>
+                        <tr>
+                            <td>
+                                <%= item.id %>
+                            </td>
+                            <td>
+                                <%= item.name %>
+                            </td>
+                            <td>
+                                <%= item.employeeId %>
+                            </td>
+                        </tr>
+                        <%})%>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <form action="/createUser" method="POST">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" id="name" name="username">
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input class="form-control" type="email" id="email" name="EmailAddress">
+        </div>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</div> -->
